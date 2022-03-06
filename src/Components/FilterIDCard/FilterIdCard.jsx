@@ -1,16 +1,8 @@
-import { React, useContext } from "react";
+import { React, useState } from "react";
 import style from "./FilterIdCard.style.module.css";
-import { idFilterShowContext } from "../Context/DataContext";
-import {dataContext} from '../Context/DataContext'
-import { idSearchContext } from "../Context/DataContext";
-import { idCulmnShowContext } from "../Context/DataContext";
 
-const FilterCard = () => {
-  const { idCulmnShow, setidCulmnShow } = useContext(idCulmnShowContext);
 
-  const { idFilterShow, setIdFilterShow } = useContext(idFilterShowContext);
-  const { data, setData } = useContext(dataContext);
-  const { idSearch, setIdSearch } = useContext(idSearchContext);
+const FilterCard = ({data, setData,idFilterShow, setIdFilterShow,idCulmnShow, setidCulmnShow,idSearch, setIdSearch}) => {
 
   const AZIdDortHandler=()=>{
     setData(data.sort(function(a, b) { 

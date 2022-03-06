@@ -1,0 +1,12 @@
+.cardMenu{
+    width: 300px;
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    border-radius: 5px;
+    border: 5px solid #04AA6D;
+    top:123px;
+    display: flex;
+    left:876px;
+    flex-direction: column;
+}
